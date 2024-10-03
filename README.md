@@ -1,9 +1,8 @@
 
-
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ## there is no doubt you are a movie enthusiast .and some times you face the problem of deciding which movie you would to watch at a given time ,my database is going to put that to an end.because you will be able to check the ratings, directors,reviews etc, of any movie and decide on which to watch.
-<h1 style="color:green">This is a green heading</h1>
-<p style="color:blue">This is a blue paragraph</p>
 
 
 ## TABLE CREATION
