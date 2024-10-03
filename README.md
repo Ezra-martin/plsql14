@@ -129,18 +129,18 @@ FROM Movies
 JOIN Directors ON Movies.DirectorID = Directors.DirectorID;
 
 * ### A LEFT JOIN (or LEFT OUTER JOIN) in SQL is used to combine rows from two tables, returning all rows from the left table and the matched rows from the right table. If there are no matches, the result will still include the rows from the left table, but with NULL values for columns from the right table.
-```
+```SQL
 SELECT Movies.Title, Reviews.ReviewerName, Reviews.Rating
 FROM Movies
 LEFT JOIN Reviews ON Movies.MovieID = Reviews.MovieID;;
 
 
 * ### the below query is used to  retrieve data on a certain condition 
-
+```SQL
 select*from reviews 
 where rating<=10;
 
-```
+
 
 
 * ## conceptual diagram
