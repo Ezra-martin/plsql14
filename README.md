@@ -101,33 +101,37 @@ INSERT INTO reviews values(4,4,'brian','crying rn',9,TO_DATE('08-05-2000','MM-DD
 
 ## QUERIES
 
-### the below query retrieves all the data from any table 
+* ### the below query retrieves all the data from any table 
 
 select*from movies;
+
 select*from reviews;
+
 select*from genres;
+
 select*from directors;
 
-### the below  query can update a certain record
+
+* ### the below  query can update a certain record
 
 update reviews
 set rating=9.7
 where movieid=2;
 
-### the An INNER JOIN in SQL is used to combine rows from two or more tables based on a related column between them. It returns only the rows where there is a match in both tables.
+* ### the An INNER JOIN in SQL is used to combine rows from two or more tables based on a related column between them. It returns only the rows where there is a match in both tables.
 
 SELECT Movies.Title, Directors.Name AS Director
 FROM Movies
 JOIN Directors ON Movies.DirectorID = Directors.DirectorID;
 
-### A LEFT JOIN (or LEFT OUTER JOIN) in SQL is used to combine rows from two tables, returning all rows from the left table and the matched rows from the right table. If there are no matches, the result will still include the rows from the left table, but with NULL values for columns from the right table.
+* ### A LEFT JOIN (or LEFT OUTER JOIN) in SQL is used to combine rows from two tables, returning all rows from the left table and the matched rows from the right table. If there are no matches, the result will still include the rows from the left table, but with NULL values for columns from the right table.
 
 SELECT Movies.Title, Reviews.ReviewerName, Reviews.Rating
 FROM Movies
 LEFT JOIN Reviews ON Movies.MovieID = Reviews.MovieID;;
 
 
-### the below query is used to  retrieve data on a certain condition 
+* ### the below query is used to  retrieve data on a certain condition 
 
 select*from reviews 
 where rating<=10;
