@@ -14,7 +14,7 @@
     description VARCHAR2(4000)
 );
 
-* ### codes to create table directors
+** ### codes to create table directors
 
   CREATE TABLE Directors (
     DirectorID INT PRIMARY KEY,
@@ -22,14 +22,14 @@
     BirthYear INT
 );
 
-* ### codes to create  table genres
+** ### codes to create  table genres
 
   CREATE TABLE Genres (
     GenreID INT PRIMARY KEY,
     GenreName VARCHAR(100) NOT NULL
 );
 
-* ### codes to create  table reviews
+** ### codes to create  table reviews
 
   CREATE TABLE Reviews (
     ReviewID INT PRIMARY KEY,
@@ -41,7 +41,7 @@
     FOREIGN KEY (MovieID) REFERENCES Movies(MovieID)
 );
 
-* ### adding foreign keys
+** ### adding foreign keys
 
 ALTER TABLE MOVIES ADD FOREIGN KEY (DirectorID)REFERENCES Directors(DirectorID);
 
@@ -52,7 +52,7 @@ ALTER TABLE MOVIES ADD FOREIGN KEY (GenreID)REFERENCES Genres(GenreID);
 ## INSERTION OF DATA IN TABLES
 
 
-* ### inserting data in table movies
+** ### inserting data in table movies
 
 INSERT INTO movies values(1,'freinds',1,1,1990);
 
@@ -63,7 +63,7 @@ INSERT INTO movies values(3,'stranger things',3,3,1998);
 INSERT INTO movies values(4,'the notebook',4,4,1999);
 
 
-* ### inserting data in table directors
+** ### inserting data in table directors
   
 
 INSERT into directors values(1,'delphine',1950);
@@ -75,7 +75,7 @@ INSERT into directors values(3,'jean valentin',1943);
 INSERT into directors values(4,'magnfique',1930);
 
 
-* ### inserting data in table genres
+** ### inserting data in table genres
   
 
 INSERT into Genres values(1,'comedy');
@@ -87,7 +87,7 @@ INSERT into genres values(3,'thriller');
 INSERT INTO genres values(4,'romantic');
 
 
-* ### inserting data into table reviews
+** ### inserting data into table reviews
   
 
 INSERT INTO reviews values(1,3,'chazzy','marvelous',9.0,TO_DATE('10-28-1998','MM-DD-YYYY'));
