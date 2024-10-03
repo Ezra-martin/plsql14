@@ -19,8 +19,8 @@
 );
 
 * ### codes to create table directors
-
-  CREATE TABLE Directors (
+```
+ CREATE TABLE Directors (
     DirectorID INT PRIMARY KEY,
     Name VARCHAR(255) NOT NULL,
     BirthYear INT
