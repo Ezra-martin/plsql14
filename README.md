@@ -43,7 +43,8 @@
 
 * ### adding foreign keys
 
-  ALTER TABLE MOVIES ADD FOREIGN KEY (DirectorID)REFERENCES Directors(DirectorID);
+ALTER TABLE MOVIES ADD FOREIGN KEY (DirectorID)REFERENCES Directors(DirectorID);
+
 ALTER TABLE MOVIES ADD FOREIGN KEY (GenreID)REFERENCES Genres(GenreID);
 
 
@@ -67,15 +68,21 @@ INSERT into directors values(4,'magnfique',1930);
 * ### inserting data in table genres
 
 INSERT into Genres values(1,'comedy');
+
 INSERT INTO genres values(2,'comedy');
+
 INSERT into genres values(3,'thriller');
+
 INSERT INTO genres values(4,'romantic');
 
 * ### inserting data into table reviews
 
 INSERT INTO reviews values(1,3,'chazzy','marvelous',9.0,TO_DATE('10-28-1998','MM-DD-YYYY'));
+
 INSERT INTO reviews values(2,1,'gashumba','sooo good',9.3, TO_DATE('11-30-1991','MM-DD-YYYY')); 
+
 INSERT INTO reviews values(3,2,'egide','lots of laughter',10,TO_DATE('09-05-1996','MM-DD-YYYY'));
+
 INSERT INTO reviews values(4,4,'brian','crying rn',9,TO_DATE('08-05-2000','MM-DD-YYYY'));
 
 
