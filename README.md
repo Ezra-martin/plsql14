@@ -2,6 +2,12 @@
 
 ## TABLE CREATION
 
+<p style="color:blue;"</p>
+<p style="color:red;"</p>
+<p style="color:black;"</p>
+<p>
+  <span style="color:blue;"</span><span style="color:red;"</span> <span style="color:black;"</span> </p>```
+    
 * ### codes to create table movies
   
   CREATE TABLE movies (
