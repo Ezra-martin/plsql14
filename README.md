@@ -149,6 +149,8 @@ where rating<=10;
 
 
 
+<img width="699" alt="conceptual diagram" src="https://github.com/user-attachments/assets/9b450842-4938-4d91-8747-f70c925bab3b">
+
 
 
 
