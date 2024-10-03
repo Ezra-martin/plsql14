@@ -147,7 +147,7 @@ where rating<=10;
 
 * ## conceptual diagram
 
-<img width="699" alt="conceptual diagram" src="https://github.com/user-attachments/assets/dd45ac19-c844-4bc8-942e-e210938c97a0">
+
 
 
 
