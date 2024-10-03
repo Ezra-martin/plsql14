@@ -6,8 +6,8 @@
 <p style="color:red;"</p>
 <p style="color:black;"</p>
 <p>
-  <span style="color:blue;"</span><span style="color:red;"</span> <span style="color:black;"</span> </p>```
-  ```sql 
+  <span style="color:blue;"</span><span style="color:red;"</span> <span style="color:black;"</span> </p>```sql
+
 * ### codes to create table movies
   
   CREATE TABLE movies (
