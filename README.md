@@ -19,22 +19,22 @@
 );
 
 * ### codes to create table directors
-```
-``` CREATE TABLE Directors (
-    DirectorID INT PRIMARY KEY,
-    Name VARCHAR(255) NOT NULL,
-    BirthYear INT
+```SQL
+ CREATE TABLE Directors (
+ DirectorID INT PRIMARY KEY,
+ Name VARCHAR(255) NOT NULL,
+ BirthYear INT
 );
 
 * ### codes to create  table genres
-
-```  CREATE TABLE Genres (
-    GenreID INT PRIMARY KEY,
-    GenreName VARCHAR(100) NOT NULL
+```SQL
+  CREATE TABLE Genres (
+  GenreID INT PRIMARY KEY,
+  GenreName VARCHAR(100) NOT NULL
 );
 
 * ### codes to create  table reviews
-
+```SQL
   CREATE TABLE Reviews (
     ReviewID INT PRIMARY KEY,
     MovieID INT,
@@ -46,7 +46,7 @@
 );
 
 * ### adding foreign keys
-
+```SQL
 ALTER TABLE MOVIES ADD FOREIGN KEY (DirectorID)REFERENCES Directors(DirectorID);
 
 ALTER TABLE MOVIES ADD FOREIGN KEY (GenreID)REFERENCES Genres(GenreID);
@@ -57,7 +57,7 @@ ALTER TABLE MOVIES ADD FOREIGN KEY (GenreID)REFERENCES Genres(GenreID);
 
 
 * ### inserting data in table movies
-
+```SQL
 INSERT INTO movies values(1,'freinds',1,1,1990);
 
 INSERT INTO movies values(2,'young sheldon',2,2,1995);
@@ -69,7 +69,7 @@ INSERT INTO movies values(4,'the notebook',4,4,1999);
 
 * ### inserting data in table directors
   
-
+```SQL
 INSERT into directors values(1,'delphine',1950);
 
 INSERT into directors values(2,'ezra',1948);
@@ -80,7 +80,7 @@ INSERT into directors values(4,'magnfique',1930);
 
 
 * ### inserting data in table genres
-  
+ ```SQL 
 
 INSERT into Genres values(1,'comedy');
 
@@ -93,7 +93,7 @@ INSERT INTO genres values(4,'romantic');
 
 * ### inserting data into table reviews
   
-
+```SQL
 INSERT INTO reviews values(1,3,'chazzy','marvelous',9.0,TO_DATE('10-28-1998','MM-DD-YYYY'));
 
 INSERT INTO reviews values(2,1,'gashumba','sooo good',9.3, TO_DATE('11-30-1991','MM-DD-YYYY')); 
@@ -106,7 +106,7 @@ INSERT INTO reviews values(4,4,'brian','crying rn',9,TO_DATE('08-05-2000','MM-DD
 ## QUERIES
 
 * ### the below query retrieves all the data from any table 
-
+```SQL
 select*from movies;
 
 select*from reviews;
@@ -117,19 +117,19 @@ select*from directors;
 
 
 * ### the below  query can update a certain record
-
+```SQL
 update reviews
 set rating=9.7
 where movieid=2;
 
 * ### the An INNER JOIN in SQL is used to combine rows from two or more tables based on a related column between them. It returns only the rows where there is a match in both tables.
-
+```SQL
 SELECT Movies.Title, Directors.Name AS Director
 FROM Movies
 JOIN Directors ON Movies.DirectorID = Directors.DirectorID;
 
 * ### A LEFT JOIN (or LEFT OUTER JOIN) in SQL is used to combine rows from two tables, returning all rows from the left table and the matched rows from the right table. If there are no matches, the result will still include the rows from the left table, but with NULL values for columns from the right table.
-
+```
 SELECT Movies.Title, Reviews.ReviewerName, Reviews.Rating
 FROM Movies
 LEFT JOIN Reviews ON Movies.MovieID = Reviews.MovieID;;
